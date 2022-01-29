@@ -8,6 +8,7 @@
 #Unneccessary
 *.psd
 *.zip
+*.xcf
 *.rtf
 *.docx
 resources/
@@ -16,3 +17,6 @@ resources/
 _back
 _code
 Project Proposal
+
+#Self reference files
+*.notinrepo
