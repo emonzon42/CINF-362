@@ -1,0 +1,19 @@
+/* Utility Classes - Includes box-sizing: border-box and a clearfix. */
+
+* {
+    box-sizing: border-box;
+}
+
+/* The following utility class styles are intended to be used for floats. If you don't want to use floats, you can delete the styles for ".row" */
+.row {
+    width: 100%;
+}
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End Utility Classes */ 
+
+/* Styles for this assignment go under here */
