@@ -5,9 +5,6 @@
 }
 
 /* The following utility class styles are intended to be used for floats. If you don't want to use floats, you can delete the styles for ".row" */
-.row {
-    width: 100%;
-}
 .row:before,
 .row:after {
     content: "";
@@ -17,3 +14,159 @@
 /* End Utility Classes */ 
 
 /* Styles for this assignment go under here */
+
+
+body{
+    font-size: 16px;
+    margin: 0 auto;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    padding-left: 1em;
+    display: flex;
+}
+.header a{
+    color: white;
+    padding: .5em;
+}
+.header nav{
+    margin: 1.5em;
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+}
+
+aside {
+    margin-right: 5%;
+    width: 30%;
+}
+
+aside .about{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin-bottom: 1em;
+    
+}
+
+aside .about a{
+    color: black;
+}
+
+aside .about img{
+    display: block;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+aside .ad{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    
+}
+
+aside .ad{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+
+aside .ad a{
+    color: lightblue;
+}
+
+aside .ad img{
+    max-width: 150px;
+    max-height: 150px;
+    width: 50%;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    width: 65%;
+}
+
+main .row.featured-posts{
+    display: block;
+}
+
+main section{
+    background-color: black;
+    color: white;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+main section p{
+    margin-top: 0;
+}
+
+main section a{
+    color: white;
+}
+
+main section .row{
+    display: flex;
+}
+
+main section img{
+    margin: .5em;
+}
+
+main .row{
+    display: flex;
+}
+
+main .row .blog-post{
+    width: 45%;
+    margin: 2.5%;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+main .row .blog-post img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .row .blog-post h4{
+    margin: .5em .5em 1em;
+}
+
+main .row .blog-post p{
+    padding: 0 .5em;
+}
+
+.footer.row{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
