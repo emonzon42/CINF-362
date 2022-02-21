@@ -3,7 +3,7 @@ My assignments/etc from my college's intermediate web development class
 
 ## Final Project:
 
-#### [idk yet you came too early](http://github.com/emonzon42/ "FinalProject!")
+#### [E-Commerce Website](http://github.com/emonzon42/HappyFeets "FinalProject!")
 
 # Contact Me
 If you're interested getting in touch in regards to business/collaborations 
