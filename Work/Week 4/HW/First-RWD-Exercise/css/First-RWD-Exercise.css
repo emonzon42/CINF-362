@@ -1,0 +1,170 @@
+/* Utility Classes - Includes box-sizing: border-box and a clearfix. */
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    width: 900px;
+    padding: 10px 0;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-size: 16px;
+}
+/* End Utility Classes */
+
+.container {
+    width: 900px;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 1em #666;
+}
+
+/* Header Styles */
+
+.header {
+    height: 75px;
+    background: black;
+    color: white;
+    width: 900px;
+}
+
+.header h1 {
+    float: left;
+    width: 420px;
+    padding-left: 30px;
+}
+
+.header nav ul {
+    float: right;
+    width: 450px;
+    background: black;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Main Styles */
+h2 {
+    margin: 0;
+    font-size: 2em;
+}
+.row:nth-child(1) p {
+    font-size: 1.25em;
+}
+.row:nth-child(1) img {
+    margin-top: 1.5em;
+}
+.two-col {
+    float: left;
+    width: 400px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.two h2 {
+    margin-top: 0;
+}
+
+.three-col {
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.three-col img {
+    display: block;
+    margin: 0 auto;
+}
+
+.three-col p {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.5em;
+}
+
+table,
+th,
+td {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.blog .two-col {
+    margin: 1% 25px;
+    background: #ddd;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+.footer {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+iframe {
+    float: left;
+    width: 380px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+form {
+    float: left;
+    width: 450px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 1em;
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 400px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+
+
+
+/* End Responsive Styles */
