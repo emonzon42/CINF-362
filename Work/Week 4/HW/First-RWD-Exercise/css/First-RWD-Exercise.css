@@ -5,8 +5,9 @@
 }
 
 .row {
-    width: 900px;
-    padding: 10px 0;
+    max-width: 900px;
+    width: 100%;
+    padding: .5em 0;
 }
 
 .row:before,
@@ -22,8 +23,9 @@ body {
 /* End Utility Classes */
 
 .container {
-    width: 900px;
-    margin: 0 auto 10px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto 1em;
     box-shadow: 0 0 1em #666;
 }
 
@@ -33,18 +35,18 @@ body {
     height: 75px;
     background: black;
     color: white;
-    width: 900px;
+    width: 100%;
 }
 
 .header h1 {
     float: left;
-    width: 420px;
-    padding-left: 30px;
+    width: 50%;
+    padding-left: 1.25em;
 }
 
 .header nav ul {
     float: right;
-    width: 450px;
+    width: 50%;
     background: black;
     text-align: center;
     padding: 0;
@@ -54,14 +56,14 @@ nav ul li {
     display: inline;
     list-style-type: none;
     text-align: center;
-    padding: 10px;
+    padding: .35em;
     font-size: 1.5em;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 5px;
+    padding: .5em;
 
 }
 
@@ -76,15 +78,18 @@ h2 {
 }
 .row:nth-child(1) p {
     font-size: 1.25em;
+    width: 100%;
 }
 .row:nth-child(1) img {
     margin-top: 1.5em;
+    max-width: 250px;
+    width: 100%;
 }
 .two-col {
     float: left;
-    width: 400px;
-    padding: 10px;
-    margin: 25px;
+    width: 44%;
+    padding: .5em;
+    margin: 1.5em;
 }
 
 .two h2 {
@@ -93,18 +98,19 @@ h2 {
 
 .three-col {
     float: left;
-    width: 300px;
+    width: 33%;
     padding: 10px;
 }
 
 .three-col img {
     display: block;
     margin: 0 auto;
+    width: 100%;
 }
 
 .three-col p {
     text-align: center;
-    margin: 10px auto;
+    margin: 1em auto;
     font-size: 1.5em;
 }
 
@@ -114,13 +120,13 @@ td {
     background: black;
     color: white;
     border: 1px solid white;
-    padding: 5px;
+    padding: .35em;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
 .blog .two-col {
-    margin: 1% 25px;
+    margin: 1% 1.5625em;
     background: #ddd;
     border: 1px solid #999;
     border-radius: 4px;
@@ -130,40 +136,62 @@ td {
 .footer {
     background: black;
     color: white;
-    padding: 10px;
+    padding: 1em;
 }
 
 iframe {
     float: left;
-    width: 380px;
-    margin-right: 50px;
-    border-radius: 10px;
+    width: 42%;
+    margin-right: 3em;
+    border-radius: 1em;
 }
 
 form {
     float: left;
-    width: 450px;
+    width: 50%;
     border: 1px solid black;
-    padding: 10px;
+    padding: 1em;
     margin-bottom: 1em;
     background: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 1em;
 }
 
 label,
 input,
 textarea {
     display: block;
-    width: 400px;
+    width: 44%;
 }
 
 input,
 textarea {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 /* Responsive Styles */
+
+@media(max-width: 850px){
+    body{
+        font-size: 14px;
+    }
+    nav ul li{
+        padding: .2em;
+    }
+
+    .blog .two-col{
+        margin: .5em;
+    }
+
+    .row.blog{
+        padding-right: 2em;
+        padding-left: 2em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+}
+
 
 
 
