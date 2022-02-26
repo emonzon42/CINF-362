@@ -32,7 +32,8 @@ body {
 /* Header Styles */
 
 .header {
-    height: 75px;
+    max-height: 75px;
+    height: 100%;
     background: black;
     color: white;
     width: 100%;
@@ -99,7 +100,8 @@ h2 {
 .three-col {
     float: left;
     width: 33%;
-    padding: 10px;
+    padding: 0.6250em;
+    
 }
 
 .three-col img {
@@ -169,6 +171,9 @@ textarea {
     margin-bottom: 1em;
 }
 
+hr{
+    display: none;
+}
 /* Responsive Styles */
 
 @media(max-width: 850px){
@@ -192,6 +197,53 @@ textarea {
 
 }
 
+@media(max-width: 715px){
+    body{
+        font-size: 12px;
+    }
+    .header h1{
+        width: 40%;
+    }
+    .header nav ul{
+        width: 60%;
+    }
+
+    .blog .two-col{
+        width: fit-content;
+    }
+
+    .row.blog{
+        padding: 0;
+        margin: auto 0;
+    }
+}
+
+@media(max-width: 615px){
+    .two-col{
+        width: fit-content;
+        margin: .8em;
+    }
+
+    .two-col p{
+        text-align: justify;
+    }
+    .row:nth-child(1) .two-col:nth-child(2){
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+/*  i cant figure out how to make this damn picture be in the middle */
+    .two-col img{
+        display: block;
+        margin-top: 0;
+        height: auto;
+    }
+
+    hr{
+        display: block;
+        width: 80%;
+    }
+}
 
 
 
