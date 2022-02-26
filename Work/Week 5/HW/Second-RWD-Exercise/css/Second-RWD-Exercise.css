@@ -1,0 +1,198 @@
+/* Utility Styles 
+These styles will let padding/border be automatically added to our width calculations.
+The row styles create a "clear fix" for us so we can float things inside of containers with a class of "row."
+We also remove the default margin from the body, give our main container a width of 100% with a max of 1000px, 
+and then we center it with margin: 0 auto. 
+The last thing we do is make all images responsive by setting their max-width to 100%. */
+
+* {
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+}
+.row:after,
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font-size: 16px;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+/* End Utility Styles */
+
+/* Header Styles */
+/* I use the header class to target this specific container. The element this targets also has a class of row as well. */
+.header {
+    background: black;
+}
+nav a {
+    float: left;
+    text-align: center;
+    width: 9%; /* 100/7 is ~14.28 */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: .5em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:first-child {
+    width: 12.5%;
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+/* End Header Styles */
+
+/* Left Column Styles */
+.left {
+    float: left;
+    width: 60%;
+    padding: 0 1em;
+}
+.left p {
+    font-size: 1.25em;
+}
+.details {
+    background: #ddd;
+    padding: 1em .5em;
+}
+.details img {
+    float: left;
+    margin-right: 1em;
+}
+.details p {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+/* End Left Column Styles */
+
+/* Right Column Styles */
+.right {
+    width: 40%;
+    float: left;
+    padding: 1em;
+}
+.right .row img {
+    float: left;
+    margin-right: .5em;
+}
+.right h2 {
+    margin-top: 0;
+}
+.right p {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+.contact {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.contact h3 {
+    margin: 0;
+    padding: .4em;
+    background: black;
+    color: white;
+    text-align: center;
+}
+form {
+    padding: .5em .75em;
+    font-size: 1.25em;
+}
+input, textarea {
+    margin-bottom: .5em;
+    width: 100%;
+    display: block;
+}
+button {
+    width: 100px;
+    padding: .5em;
+    display: block;
+}
+/* End Right Column Styles */
+
+
+/* Related Stories/other-news Styles */
+.five {
+    float: left;
+    width: 20%;
+    border-left: 1px solid #bbb;
+}
+.other-news h2 {
+    margin-top: 0;
+}
+.other-news {
+    margin-bottom: .5em;
+    padding: 0 1em;
+}
+.other-news .five:nth-child(6) {
+    border-right: 1px solid #bbb;
+}
+.five img, .four img {
+    display: block;
+    margin: .5em auto;
+}
+.five h3, .five p {
+    max-width: 225px;
+    margin: 0 auto .5em;
+}
+.other-news .four {
+    width: 25%;
+    float: left;
+    border-left: 1px solid #bbb;
+}
+.other-news .four p, .other-news .four h3 {
+    max-width: 275px;
+    margin: .5em auto;
+}
+.other-news .four:nth-child(4) {
+    border-right: 1px solid #bbb;
+}
+.other-news .mini-stories p {
+    padding: .5em;
+    max-width: 100%;
+    margin: 0;
+    font-size: 1.25em;
+    background: beige;
+    border-top: 2px solid red;
+}
+/* End Related Stories Styles */
+
+/* Footer Styles */
+.footer {
+    background: black;
+    color: white;
+    padding: 1em;
+}
+.footer .four {
+    float: left;
+    width: 25%;
+}
+.footer p {
+    font-size: 1.5em;
+    margin: 0;
+}
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+.footer li {
+    margin: .5em 0;
+    font-size: 1.25em;
+}
+.footer a {
+    color: white;
+}
+/* End Footer Styles */
+
+/* ADD MEDIA QUERIES HERE */
+
+
