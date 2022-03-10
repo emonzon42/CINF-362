@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cookies Challenge</title>
+    <style>
+        input,
+        label {
+            display: block;
+        }
+
+        input {
+            margin-bottom: 1em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Cookies Challenge</h1>
+    <p>Complete the Cookies Challenge mentioned in this week's lecture notes. I've provided a form for you to use along with some JavaScript code to get you started.</p>
+
+    <p id="infoOutput"></p>
+
+    <!-- FORM FOR CHALLENGE 1 -->
+    <form>
+        <!-- Use the ids from the two inputs below to retrieve their data. -->
+        <label for="fName">First Name</label>
+        <input id="fName" type="text">
+
+        <label for="prefLang">Preferred Language</label>
+        <input id="prefLang" type="text">
+
+        <button id="submitInfo" type="button">Save Info</button>
+        <!-- The id above is what you'll use for the onclick event -->
+    </form>
+
+    <!-- END FORM -->
+
+    <!-- Add JS to this script tag -->
+    <script>
+        // This is where our output will go, we can refer to it later
+        var output = document.getElementById("infoOutput");
+
+        // This function should be used to check our numVisits cookie
+        // It will return the number of visits (if any)
+        function checkVisits() {
+
+            // Get all our cookies and store them in a variable called "allCookies"
+
+
+            // Split allCookies by semicolons and store it in an array called "SplitCookies"
+
+
+            // Loop through each invidual cookie (splitCookies.length)
+            for (var c = 0; c < splitCookies.length; c++) {
+
+                // Create a new variable called cleanCookie and store splitCookies[c].trim(); to it
+
+
+                // Check to see if the cookie we are looking for exists (cleanCookie.indexOf() == 0)
+                // You'll need to place the name of the cookie inside of the parenthesis for indexOf
+                if () {
+
+                    // Create a variable called currentCookieSplit and assign it a value of cleanCookie.split("=")
+                    // This will create an array called currentCookieSplit
+
+
+                    // Create a variable called numVisits and assign it to the second item in the currentCookieSplit array
+                    // Remember that arrays start with 0, so the second item would be referenced with a 1
+                    
+
+                    // Increment the numVisits variable by 1
+                    
+
+                    // Return numVisits
+                    
+
+                } else {
+
+                    // Return an empty string
+                    
+
+                }
+            }
+        }
+
+        // This function will generate output for the number of visits
+        function visitsOutput() {
+
+            // Create a visits variable to store our number of visits (if any)
+            var visits = checkVisits();
+
+            // If visits is empty, we tell the user
+            if (visits == "") {
+
+                // Generate output to tell the user it is their first visit (use output.innerHTML)
+                
+
+                // Store the numVisits cookie using 1 as the value - do this with the storeCookie functio below
+                
+
+            } else {
+
+                // Generate output to tell the user what visit # it is for them (use output.innerHTML)
+                // You'll need string concatenation 
+
+                // Store the numVisits cookie using visits as the value - do this with the storeCookie function below
+                
+            }
+
+        }
+
+        // Call our visitsOutput() function to get initial output on the page
+        
+
+        // Use this function to create cookies 
+        // document.cookie should use string concatenation with name and value 
+        function storeCookies(name, value) {
+            // Create your date and expiration here (look at class example)
+            
+
+            // Add your cookies here - You'll need string concatenation (look at class example)
+            
+        }
+
+        document.getElementById("submitInfo").onclick = function() {
+
+            // Create two variables to get the values from out inputs (use .value for input value)
+            // The variables should be named fName and prefLang
+            
+
+            // Create an if/else statement to check those values
+            // If they're empty, produce an error message.
+            // Otherwise (else), store our cookies with the values provided using the storeCookies() function
+            if (fName == "" || prefLang == "") {
+                // Create output to let user know that they need to provide valid information (use output.innerHTML)
+                
+            } else {
+                // Create output to let user know their submission was succesful (use output.innerHTML)
+                // You'll need string concatenation with the variables above
+                
+
+                // You need to call storeCookies twice with the name of the cookies and the values you want to provide
+                // The values will be the variable names from above
+                
+                
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
