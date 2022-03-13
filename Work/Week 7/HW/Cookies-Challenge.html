@@ -65,14 +65,13 @@
                     // Create a variable called currentCookieSplit and assign it a value of cleanCookie.split("=")
                     // This will create an array called currentCookieSplit
                     let currentCookieSplit = cleanCookie.split("=");
-                    // ! idk what the problem is but its not incrementing the numvisits no matter what i do as a cookie
 
                     // Create a variable called numVisits and assign it to the second item in the currentCookieSplit array
                     // Remember that arrays start with 0, so the second item would be referenced with a 1
                     var numVisits = currentCookieSplit[1];
 
                     // Increment the numVisits variable by 1
-                    numVisits+=1;
+                    numVisits++;
 
                     // Return numVisits
                     return numVisits;
@@ -105,7 +104,7 @@
 
                 // Generate output to tell the user what visit # it is for them (use output.innerHTML)
                 // You'll need string concatenation 
-                output.innerHTML = "Welcome back. This is the "+visits+" time you've visited out website.";
+                output.innerHTML = "Welcome back. This is the "+visits+" time you've visited our website.";
 
                 // Store the numVisits cookie using visits as the value - do this with the storeCookie function below
                 storeCookies("numVisits",visits);
@@ -120,7 +119,7 @@
         // document.cookie should use string concatenation with name and value 
         function storeCookies(name, value) {
             // Create your date and expiration here (look at class example)
-            let date = new Date(9999, 12, 31);
+            var date = new Date(2023,1,31);
 
             // Add your cookies here - You'll need string concatenation (look at class example)
             document.cookie = ""+name+"="+value+"; expires=" +date.toUTCString()+ "; path=/";
