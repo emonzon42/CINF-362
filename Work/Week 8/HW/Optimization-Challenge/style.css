@@ -1,0 +1,273 @@
+/* 
+ADD CSS RESET CODE BELOW THIS COMMENT
+REDUCE REDUNDANT CSS CODE (4 locations)
+ADD RESPONSIVE STYLES IN THE "Responsive Styles" SECTION
+MINIFY ALL THE CSS IN THIS FILE WHEN YOU ARE DONE
+*/
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+.hide {
+    display: none;
+}
+.cookieModal {
+    position: fixed;
+    bottom: 0;
+    width: 400px;
+    background: #003925;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    line-height: 1.4em;
+    border-top-right-radius: 10px;
+}
+.cookieModal h3 {
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-bottom: .5em;
+}
+.cookieModal button {
+    margin: .5em .5em 0 0;
+}
+.flex {
+    display: flex;
+    width: 100%:
+}
+body {
+    background-color: lightgray;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    background: white;
+    color: #003925;
+    
+    /* Redundant Styles */
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    border-bottom: 3px solid #003925;
+}
+.container {
+    width: 100%;
+    line-height: 1.4;
+    background-color: lightgray;
+}
+
+/* Navigation Styles */
+.header {
+    width: 20%;
+    position: relative;
+    padding: 1em;
+}
+.header nav {
+    background-color: #003925; 
+    position: sticky;
+    margin: 0 auto;
+    max-width: 200px;
+    top: 4em;
+    border-radius: 10px;
+    width: 100%;
+}
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    
+    /* Redundant Styles */
+    border: 3px;
+    border-style: solid;
+    border-color: #003925;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 10px;
+}
+nav a:hover {
+    background: white;
+    color: #003925;
+    border: 3px solid #003925;
+}
+
+/* Content Styles */
+.content {
+    width: 80%;
+}
+/* Main styles */
+.main {
+    width: 65%;
+    margin-right: 5%;
+    padding: 1em;
+}
+.main section {
+    margin-bottom: 1em;
+    color: #003925;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #003925;
+    
+    /* Redundant Style */
+    background-color: white;
+}
+.main .about {
+    background: white;
+    color: #003925;
+}
+.main .about h2 {
+    background-color: #003925;
+    color: white;
+}
+.main section h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    background: #003925;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: .5em 1em;
+}
+.main section div {
+    padding: 1em;
+}
+.main section div p {
+    padding: 0;
+}
+.main section img {
+    margin-right: 1em;
+    max-width: 100%;
+}
+.main section p {
+    padding: 1em;
+}
+.main section a:hover {
+    background: white;
+    color: #003925;
+    padding: .1em;
+    border-radius: 5px;
+}
+/* Aside styles */
+.aside {
+    padding: 1em;
+    width: 30%;
+}
+.aside h3 {
+    font-weight: bold;
+    font-size: 1.17em;
+    background: #003925;
+    color: white;
+    padding: .5em;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.aside section {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #003925;
+}
+.aside p {
+    padding: 1em;
+}
+.aside h4 {
+    /* Redundant Styles */
+    margin: 1em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.aside img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: white;
+    color: #003925;
+    padding: 1em;
+    border-top: 3px solid #003925;
+}
+.footer .flex {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact {
+    width: 45%;
+    margin-right: 5%;
+    border: 1px solid #003925;
+    border-radius: 10px;
+}
+form {
+    background: white;
+    color: #003925;
+    padding: 1em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.footer h4 {
+    font-weight: bold;
+    padding: .5em;
+    background-color: #003925;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+input[type="text"] {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    padding: .5em;
+}
+input[type="radio"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.footer p {
+    margin-bottom: 1em;
+}
+.footer button {
+    display: block;
+    padding: 1.5em;
+    font-weight: bold;
+    background: #003925;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+.footer button:hover {
+    color: #003925;
+    background: white;
+    cursor: pointer;
+}
+.map {
+    width: 50%;
+}
+iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #003925;
+}
+
+/* Responsive Styles */
+@media(max-width: 1000px) {
+    
+}
+
+@media(max-width: 800px) {
+    
+}
+
+@media(max-width: 600px) {
+    
+}
+
+/* End Responsive Styles */
