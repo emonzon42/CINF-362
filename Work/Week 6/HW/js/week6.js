@@ -26,3 +26,37 @@ document.getElementById("subch2").onclick = function() {
 
     
 }
+
+//challenge 3
+var animals = ["lion","monkey","cow"];
+animals.forEach(ani => {
+    document.getElementById("ch3output").innerHTML += "<li>"+ani+"</li>";
+});
+document.getElementById("subch3").onclick = function() {
+    let animal = document.getElementById("ch3").value;
+
+    animals.push(animal);
+
+    document.getElementById("ch3output").innerHTML ="";
+    animals.forEach(ani => {
+        document.getElementById("ch3output").innerHTML += "<li>"+ani+"</li>";
+    });
+}
+
+//challenge 4
+var myInfo = {
+    favColor: "yellow",
+    age: "22",
+
+    favQuote: function(){
+        alert('"You never really know the true value of a moment, until it becomes a memory."');
+    }
+}      
+
+document.getElementById("subch4").onclick = function() {
+    
+    alert("My favorite color is "+ myInfo.favColor+" and in "+(100-myInfo.age)+" years I will be 100.");
+
+    myInfo.favQuote();
+
+}
