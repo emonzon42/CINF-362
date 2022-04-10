@@ -4,6 +4,49 @@ REDUCE REDUNDANT CSS CODE (4 locations)
 ADD RESPONSIVE STYLES IN THE "Responsive Styles" SECTION
 MINIFY ALL THE CSS IN THIS FILE WHEN YOU ARE DONE
 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* General Styles */
 * {
@@ -33,7 +76,7 @@ MINIFY ALL THE CSS IN THIS FILE WHEN YOU ARE DONE
 }
 .flex {
     display: flex;
-    width: 100%:
+    width: 100%;
 }
 body {
     background-color: lightgray;
@@ -45,10 +88,7 @@ h1 {
     color: #003925;
     
     /* Redundant Styles */
-    padding-top: .5em;
-    padding-right: .5em;
-    padding-bottom: .5em;
-    padding-left: .5em;
+    padding: .5em;
     border-bottom: 3px solid #003925;
 }
 .container {
@@ -80,9 +120,7 @@ nav a {
     text-align: center;
     
     /* Redundant Styles */
-    border: 3px;
-    border-style: solid;
-    border-color: #003925;
+    border: 3px solid #003925;
     font-weight: bold;
     font-family: arial;
     border-radius: 10px;
@@ -111,7 +149,6 @@ nav a:hover {
     border: 1px solid #003925;
     
     /* Redundant Style */
-    background-color: white;
 }
 .main .about {
     background: white;
@@ -175,14 +212,16 @@ nav a:hover {
 }
 .aside h4 {
     /* Redundant Styles */
-    margin: 1em;
-    margin-bottom: 0;
+    margin: 1em 1em 0;
     font-weight: bold;
 }
 .aside img {
+    max-height: 350px;
+    height: auto;
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    
 }
 
 /* Footer Styles */
@@ -259,15 +298,79 @@ iframe {
 
 /* Responsive Styles */
 @media(max-width: 1000px) {
-    
+    *{
+        font-size: 90%;
+    }
+    aside{
+        font-size: 90%;
+    }
 }
 
 @media(max-width: 800px) {
-    
+    h1{
+        font-size: 160%;
+    }
+    *{
+        font-size: 80%;
+    }
+    aside{
+        font-size: 80%;
+    }
+    .about .flex{
+        flex-direction: column;
+        
+    }
+    .about img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .main section img{
+        margin-right: auto;
+        width: 125px;
+    }
 }
 
 @media(max-width: 600px) {
-    
+    h1{
+        font-size: 140%;
+    }
+    *{
+        font-size: 120%;
+    }
+    aside{
+        font-size: 120%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .header{
+        position: initial;
+        width: initial;
+    }
+    .header nav{
+        max-width: 100%;
+    }
+    .header nav a{
+        width: 100%;
+        padding: 2em 0;
+    }
+    .content, .main, .aside, .contact, .map{
+        width: 100%;
+    }
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+    .cookieModal{
+        width: 100%;
+        
+    }
+    .cookieModal button {
+        
+        padding: 1em 4em;
+    }
+
 }
 
 /* End Responsive Styles */
