@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    width:100%;
+    margin-bottom: 100px;
+}
+
+.row:after,
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.warning {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.red {
+    color: red;
+}
+table, tr, td {
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+table {
+    width: 60%;
+    margin: 20px auto;
+}
