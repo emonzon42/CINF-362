@@ -24,7 +24,19 @@
     <p>Since I use the "GET" method, you can see the variables passed from the previous page in the URL for this page. If you edit those values in the URL and then hit enter, the new values should apply on the page.</p>
     <?php 
     // Add PHP code in here
-    
+        if (isset($_GET['submit'])) {
+            if(empty($_GET['width']) || empty($_GET['height']) || empty($_GET['color']) || empty($_GET['border']) || empty($_GET['msg'])){
+                echo "Please provide any missing values";
+            } else{
+                if(is_numeric($_GET['width']) && is_numeric($_GET['height'])){
+                    echo "<div style='width: '. $width . 'px; height: '. $height. 'px; background: '. $color . '; border: '. $border. ';'>
+                    <p> . $msg.</p>
+                    </div>";
+                } else{
+                    echo "Please submit numerical values for the width/height.";
+                }
+            }
+        }
     ?>
 
 </body>
