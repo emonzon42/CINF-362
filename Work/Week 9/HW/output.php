@@ -29,8 +29,14 @@
                 echo "Please provide any missing values";
             } else{
                 if(is_numeric($_GET['width']) && is_numeric($_GET['height'])){
-                    echo "<div style='width: '. $width . 'px; height: '. $height. 'px; background: '. $color . '; border: '. $border. ';'>
-                    <p> . $msg.</p>
+                    $width = $_GET['width'];
+                    $height = $_GET['height'];
+                    $color = $_GET['color'];
+                    $border = $_GET['border'];
+                    $msg = $_GET['msg'];
+
+                    echo "<div style='width: "."$width"."px; height: "."$height"."px; background: "."$color; border: "."$border;'>
+                    <p>"."$msg"."</p>
                     </div>";
                 } else{
                     echo "Please submit numerical values for the width/height.";

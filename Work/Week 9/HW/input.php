@@ -34,7 +34,7 @@
     <p>Feel free to try 300, 300, aquamarine for your inputs. You can include 2px solid black, and whatever message you'd like for the extra credit portion. </p>
 
     <!-- Add HTML for your form here. Your form should have an action and methods attributes on it. Also, you should have a label for every input, and a button with a type of submit. Each input and the button should use a name attribute. This name attribute value will be passed to the output.php page for you to use. You must also use the id attribute to pair with the label for validation purposes. -->
-    <FORM action=“output.php" method=“get”>
+    <FORM action="output.php" method=“get”>
         <label for="width">width:</label><br> <!-- The labels "for" attribute value must match an id value -->
         <input name="width" type="number"><br> <!-- type can be changed to many other things -->
         
@@ -42,13 +42,13 @@
         <input name="height" type="number"> <br><!-- type can be changed to many other things -->
         
         <label for="color">color:</label> <br>
-        <input name="color" type="number"><br> <!-- type can be changed to many other things -->
+        <input name="color" type="text"><br> <!-- type can be changed to many other things -->
         
         <label for="border">border:</label> <br>
         <input name="border" type="text"><br> <!-- type can be changed to many other things -->
         
         <label for="msg">message:</label> <br>
-        <textarea name="msg" type="text"><br> <!-- type can be changed to many other things -->
+        <textarea name="msg" type="text"></textarea><br> <!-- type can be changed to many other things -->
         
         <button name="submit" type="submit">Submit Me!</button><br>
         
