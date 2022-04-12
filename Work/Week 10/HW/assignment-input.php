@@ -43,35 +43,49 @@
         
         <h3>Fruit Autofiller</h3>
         <!-- Create an input with an id and name of fruitInput. Its type should be text -->
-        
+        <label for "fruitInput">Enter a Fruit</label>
+        <input name="fruitInput" id="fruitInput">
+
 
         <!-- Create a div with an id of fruitOutput, and place a p tag inside of it with "Please enter a fruit." inside the p tag  -->
-        
+        <div id="fruitOutput">Please enter a fruit.</div>
         
         <script>
             
             // Fill the parenthesis for the getElementById function. It should match the id of your input
-            document.getElementById().onkeyup = function() {
+            document.getElementById('fruitInput').onkeyup = function() {
 
                 // Create a variable called fruit and store the value of our input in it (this.value)
-                
+                let fruit = this.value;
 
                 // Fill the parenthesis - Check to see if our fruit variabl is equal to empty strings
-                if () {
+                if (empty(fruit)) {
                     
                     // Output "<p>Please enter a fruit.</p>" to the div tag with an id of fruitOutput
-                    
+                    document.getElementById('fruitOutput').innerHTML = "<p>Please enter a fruit.</p>";
+
                     
                 } else {
                     
                     // Create a variable called myRequest and store a new XMLHttpRequest in it
-                    
+                    let myRequest = new XMLHttpRequest();
 
                     // Create a function for when the ready state changes for your myRequest
+                    
                     // Inside of that function will be an if statement to check the readyState (4) and status (200) of our request
                     // You can refer to our request with "this" 
                     // Inside of the if statement, you'll output this.responseText to the div tag with an id of fruitOutput 
-                    
+                    myRequest.onreadystatechange = function(){
+
+                        if(this.status == 200 && this.readyState == 4){
+                            document.getElementById('fruitOutput').innerHTML = "<p>"+this.responseText+"</p>";
+                        }
+
+                    }
+
+                    myRequest.open("GET", "assignment-data.php?fruitInput="+fruit,true);
+
+                    myRequest.send();
                     
 
                     // Use the .open() method on the myRequest variable. It should use three arguments
