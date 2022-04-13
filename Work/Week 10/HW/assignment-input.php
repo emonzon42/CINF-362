@@ -43,8 +43,9 @@
         
         <h3>Fruit Autofiller</h3>
         <!-- Create an input with an id and name of fruitInput. Its type should be text -->
-        <label for "fruitInput">Enter a Fruit</label>
+        <label for="fruitInput">Enter a Fruit</label>
         <input name="fruitInput" id="fruitInput">
+        
 
 
         <!-- Create a div with an id of fruitOutput, and place a p tag inside of it with "Please enter a fruit." inside the p tag  -->
@@ -59,7 +60,7 @@
                 let fruit = this.value;
 
                 // Fill the parenthesis - Check to see if our fruit variabl is equal to empty strings
-                if (empty(fruit)) {
+                if (fruit == "") {
                     
                     // Output "<p>Please enter a fruit.</p>" to the div tag with an id of fruitOutput
                     document.getElementById('fruitOutput').innerHTML = "<p>Please enter a fruit.</p>";
