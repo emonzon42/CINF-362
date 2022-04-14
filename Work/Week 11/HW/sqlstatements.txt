@@ -1,0 +1,8 @@
+1) SELECT `firstname`, `email` FROM `customers`
+2) SELECT `email` FROM `customers` WHERE age<=40
+3) SELECT `firstname` FROM `customers` WHERE `designation`="Hero" AND `favFood`="Pizza"
+4) SELECT `firstname`,`lastname`,`age` FROM `customers` WHERE `lastname` ="Turtle"
+5) UPDATE `customers` SET `lastname`="Ninja" WHERE `lastname`="Turtle"
+6) SELECT `firstname`, `lastname`,`age` FROM `customers` WHERE `designation`="Citizen"
+7) SELECT * FROM `customers` WHERE `designation`="Villain" AND `favFood`="Cookies"
+8) INSERT INTO `customers`(`firstname`, `lastname`, `email`, `age`, `favFood`, `designation`) VALUES ("Eli","Alvarenga","eli.develops@gmail.com",22,"Sushi","Villain")
