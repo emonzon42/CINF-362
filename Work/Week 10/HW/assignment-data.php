@@ -14,8 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         
     // Add text to the parenthesis for the foreach loop using the fruitsArray as the first part and $fruit as the 2nd part ($fruitsArray as $fruit)
     foreach ($fruitsArray as $fruit) {
-        # code...
-    } {
 
         // Use the stripos function to see if our fruit is found in the array
         // The first arguement should be our current fruit ($fruit)
@@ -23,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         // The result of the stripos function must be equal to 0 (=== 0)
 
         
-        if (stripos($fruit,$submittedFruit) == 0) {
+        if (stripos($fruit,$submittedFruit) === 0) {
 
             // Set returnedFruit equal to itself plus $fruit
             // Make sure to surround the fruit variable in li tags
