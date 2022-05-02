@@ -43,9 +43,9 @@
     $view = false;
     
     if(isset($_POST['submit'])) { // Has our form been submitted?
-            
+
         include 'pwd.php';
-            
+        
         // Create new connection through mysqli using the four pieces of credentials
         $conn = new mysqli($servername, $username, $password, $db);
 
@@ -67,7 +67,16 @@
                 break;
 
             // ADD CODE FOR YOUR INSERT STATEMENT HERE
-            
+            case 'insert':          
+                if (empty($_POST['fname']) || empty($_POST['lname']) || empty($_POST['email'])) {
+                    $message = "Please fill out all values.";
+                } else{ 
+                    $sql = "INSERT INTO people (firstname, lastname, email) 
+                    VALUES ('".$_POST['fname']."', '".$_POST['lname']."', '".$_POST['email']."')";
+                    $message = "Person added successfully.";
+                }          
+                
+            break;
 
             // Used for dropping our table
             case 'delete':
@@ -107,7 +116,11 @@
         <button type="submit" name="submit" value="delete">Delete Table</button>
 
         <!-- ADD YOUR INPUTS, LABELS, AND NEW BUTTON TO THIS FORM -->
-        
+        <br>
+        <label for="fname">First Name:</label> <input type="text" name="fname" id="name"> 
+        <label for="lname">Last Name:</label> <input type="text" name="lname" id="lname">
+        <label for="email">Email:</label> <input type="text" name="email" id="email">
+        <button type="submit" name="submit" value="insert">Insert Into Table</button><br>
 
         <button type="submit" name="submit" value="view">View People Table</button>
         <p>

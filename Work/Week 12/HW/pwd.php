@@ -1,8 +1,8 @@
 <?php
 
-$servername = ""; // Fill this with DB Host (localhost)
-$username = ""; // FIll this with your DB User
-$password = ""; // Fill this with password created during database setup
-$db = ""; // Fill this with DB Name
+$servername = "localhost"; // Fill this with DB Host (localhost)
+$username = "id18873652_bigsteppa"; // FIll this with your DB User
+$password = "(+ewzaF7!ol4fe3="; // Fill this with password created during database setup
+$db = "id18873652_week12"; // Fill this with DB Name
 
 ?>
